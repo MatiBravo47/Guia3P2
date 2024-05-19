@@ -15,6 +15,7 @@ namespace Guia3P2
              * Producto esperado: Un programa que solicita al usuario dos numeros y una operacion, luego muestra el 
              * resultado de la operacion.
             */
+            /*
             Console.WriteLine("Ingrese el primer numero:");
             double numero1 = double.Parse(Console.ReadLine());
 
@@ -56,6 +57,47 @@ namespace Guia3P2
             }
 
             Console.ReadLine();            
+        */
+            /*
+             * Dias de la semana:
+             * Objetivo: Desarrollar un programa que, dado un numero del 1 al 7,
+             * muestre el dia correspondiente de la semana.
+             * Producto esperado: Un programa que solicita al usuario un numero del 1 al 7 
+             * y muestra el dia de la semana correspondiente.
+            */
+            int numeroDia;
+            Console.WriteLine("Ingrese un numero del 1 al 7");
+            numeroDia = int.Parse(Console.ReadLine());
+
+            switch (numeroDia)
+            {
+                case 1:
+                    Console.WriteLine("Lunes");
+                    break;
+                case 2:
+                    Console.WriteLine("Martes");
+                    break;
+                case 3:
+                    Console.WriteLine("Miercoles");
+                    break;
+                case 4:
+                    Console.WriteLine("Jueves");
+                    break;
+                case 5:
+                    Console.WriteLine("Viernes");
+                    break;
+                case 6:
+                    Console.WriteLine("Sabado");
+                    break;
+                case 7:
+                    Console.WriteLine("Domingo");
+                    break;
+                default:
+                    Console.WriteLine("Numero incorrecto");
+                    break;
+            }
+            Console.ReadLine();
         }
+
     }
 }
